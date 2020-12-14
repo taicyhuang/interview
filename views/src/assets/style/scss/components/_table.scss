@@ -1,0 +1,53 @@
+.table{
+    width: 100%;
+    &-box{
+        width: 100%;
+        overflow-x: auto;
+        thead{
+            tr{
+                font-weight: bold;
+                border-bottom: 1px solid #9ba3af;
+            }
+        }
+        tr{
+            border-bottom: 1px solid #e4e7eb;
+        }
+        tbody{
+            tr{
+                &:nth-child(2n+2), &:hover{
+                    background-color: #f9fafb;
+                }
+            }
+        }
+        th, td{
+            padding: 0.5rem;
+        }
+        th{
+            white-space: nowrap;
+        }
+        td{
+            // min-width: 120px;
+            vertical-align: middle;
+        }
+    }
+    &-index{
+        width: 30px;
+    }
+}
+.control{
+    &-box{
+        white-space: nowrap;
+        .btn{
+            margin: 0 3px;
+        }
+    }
+    &-md{
+        width: 130px;
+    }
+    &-lg{
+        width: 180px;
+    }
+    &-xl{
+        width: 235px;
+    }
+}

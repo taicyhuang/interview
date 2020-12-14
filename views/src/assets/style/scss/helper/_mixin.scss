@@ -1,0 +1,9 @@
+@mixin btn($bgColor){
+    background-color: $bgColor;
+    // color: $color;
+    transition: all .3s;
+    &:hover{
+        background-color: darken($bgColor, 15%);
+        // color: $color;
+    }
+}

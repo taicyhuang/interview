@@ -1,0 +1,11 @@
+.breadcrumbs{
+    li{
+        + li{
+            &::before{
+                content: "/";
+                margin: 0 4px;
+                color: #d1d5da;
+            }
+        }
+    }
+}

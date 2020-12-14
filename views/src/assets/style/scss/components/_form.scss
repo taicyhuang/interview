@@ -1,0 +1,39 @@
+@import "../helper/variables", "../helper/mixin";
+.form{
+    &-detail{
+        .form-text{
+            border-bottom: 1px solid #e4e7eb;
+            flex: 1;
+            padding-bottom: 5px;
+        }
+    }
+    &-group{
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 1rem;
+    }
+    &-control{
+        padding: 0.45rem 0.75rem;
+    }
+}
+.required{
+    &::after{
+        content: "*";
+        color: $delete;
+    }
+}
+.btn{
+    padding: 0.5rem 0.75rem;
+    &-edit{
+        @include btn($edit);
+    }
+    &-delete{
+        @include btn($delete);
+    }
+    &-primary{
+        @include btn($primary);
+    }
+    &-back{
+
+    }
+}
